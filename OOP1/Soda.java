@@ -1,3 +1,5 @@
+package OOP1;
+
 public class Soda extends Product{
     public Soda(String name, double price, String flavor) {
         super(name, price);

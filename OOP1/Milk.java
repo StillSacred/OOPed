@@ -1,3 +1,5 @@
+package OOP1;
+
 public class Milk extends Product{
     private Double fatContent;
 
