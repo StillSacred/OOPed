@@ -1,4 +1,4 @@
-package OOP2.Interfaces;
+package OOP2;
 
 public interface Speakable {
     String speak();

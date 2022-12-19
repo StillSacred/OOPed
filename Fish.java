@@ -1,7 +1,5 @@
 package OOP2;
 
-import Interfaces.Swimable;
-
 public class Fish extends Animal implements Swimable {
     public Fish(String name, int legs, String owner) {
         super(name, legs, owner);

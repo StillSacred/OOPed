@@ -1,8 +1,5 @@
 package OOP2;
 
-import Interfaces.Runable;
-import Interfaces.Speakable;
-
 public abstract class Animal {
     private String nickname;
     private int legs;

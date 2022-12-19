@@ -1,10 +1,5 @@
 package OOP2;
 
-import Interfaces.Runable;
-import Interfaces.Speakable;
-import Interfaces.Swimable;
-import Interfaces.Flyable;
-
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,10 +1,5 @@
 package OOP2;
 
-import Interfaces.Flyable;
-import Interfaces.Runable;
-import Interfaces.Speakable;
-import Interfaces.Swimable;
-
 public class Duck extends Animal implements Speakable, Runable, Flyable, Swimable {
     public Duck(String name, int legs, String owner) {
         super(name, legs, owner);

@@ -1,9 +1,5 @@
 package OOP2;
 
-import Interfaces.Flyable;
-import Interfaces.Runable;
-import Interfaces.Swimable;
-
 public class Main {
     public static void main(String[] args) {
         Zoo zoo = new Zoo();

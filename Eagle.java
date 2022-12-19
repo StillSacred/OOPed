@@ -1,9 +1,5 @@
 package OOP2;
 
-import Interfaces.Flyable;
-import Interfaces.Runable;
-import Interfaces.Speakable;
-
 public class Eagle extends Animal implements Speakable, Runable, Flyable {
     public Eagle(String name, int legs, String owner) {
         super(name, legs, owner);

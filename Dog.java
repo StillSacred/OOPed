@@ -1,8 +1,5 @@
 package OOP2;
 
-import Interfaces.Runable;
-import Interfaces.Speakable;
-
 public class Dog extends Animal implements Speakable, Runable {
     public Dog(String name, int legs, String owner) {
         super(name, legs, owner);
