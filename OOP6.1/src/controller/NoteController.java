@@ -1,34 +1,34 @@
 package controller;
 
 import model.Note;
-import model.NoteManager;
+import model.NoteOperable;
 
 import java.util.List;
 
-public class NoteController {
-    private NoteManager noteManager;
+public class NoteController implements NoteControllable{
+    private NoteOperable noteOperable;
 
-    public NoteController(NoteManager noteManager) {
-        this.noteManager = noteManager;
+    public NoteController(NoteOperable noteOperable) {
+        this.noteOperable = noteOperable;
     }
 
-    public void crateNote(String title, String content) {
-        noteManager.createNote(title, content);
+    public void createNote(String title, String content) {
+        noteOperable.createNote(title, content);
     }
 
     public void updateNote(String id, String newTitle, String newContent) {
-        noteManager.updateNote(id, newTitle, newContent);
+        noteOperable.updateNote(id, newTitle, newContent);
     }
 
     public void deleteNote(String id) {
-        noteManager.deleteNote(id);
+        noteOperable.deleteNote(id);
     }
 
     public Note findById(String id) {
-        return noteManager.findById(id);
+        return noteOperable.findById(id);
     }
 
     public List<String> readAllNotes() {
-        return noteManager.readAllNotes();
+        return noteOperable.readAllNotes();
     }
 }

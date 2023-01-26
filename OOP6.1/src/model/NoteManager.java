@@ -3,7 +3,7 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NoteManager {
+public class NoteManager implements NoteOperable {
     private NoteMapper noteMapper;
     private Saver saver;
     private NotebookReader nbReader;

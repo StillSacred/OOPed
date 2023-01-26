@@ -10,7 +10,9 @@ public class Main {
         NotebookReader nbReader = new NotebookReader();
         String fileName = "notes.txt";
         NoteManager noteManager = new NoteManager(noteMapper, saver, nbReader, fileName, dateMaker);
-        NoteController noteController = new NoteController(noteManager);
+        LogWriter logWriter = new LogWriter();
+        NoteManagerDecorator nmDecorator = new NoteManagerDecorator(noteManager, logWriter);
+        NoteController noteController = new NoteController(nmDecorator);
         NoteView view = new NoteView(noteController);
         view.run();
     }
